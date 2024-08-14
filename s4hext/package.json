@@ -1,0 +1,41 @@
+{
+  "name": "s4hext",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": {
+    "type": "git",
+    "url": "<Add your repository here>"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/approuter": "^16.6.0",
+    "@sap/cds": "^7",
+    "@sap/xssec": "^3",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap-cloud-sdk/generator": "^3.16.0",
+    "@sap/cds-dk": "^7",
+    "@sap/eslint-plugin-cds": "^3",
+    "@sap/ux-specification": "^1.120.14",
+    "eslint": "^9"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-manageproducts": "cds watch --open manageproducts/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-manageorders": "cds watch --open manageorders/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "OP_API_SALES_ORDER_SRV_0001": {
+        "kind": "odata-v2",
+        "model": "srv/external/OP_API_SALES_ORDER_SRV_0001"
+      },
+      "auth": "xsuaa"
+    }
+  },
+  "main": "eslint.config.js",
+  "author": ""
+}

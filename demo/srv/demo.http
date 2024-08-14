@@ -1,0 +1,27 @@
+http://localhost:4004/odata/v4/CatalogService/student?$format=json
+###Create
+POST http://localhost:4004/odata/v4/CatalogService/student
+Content-Type: application/json
+ 
+{
+      "houseNo": 200,
+      "street": "St johns road",
+      "sector": "Sector 77",
+      "landmark": "DLF mega city",
+      "city": "Gurgaon",
+      "country": "IN",
+      "id": "5006",
+      "firstName": "Minakshi",
+      "lastName": "sen",
+      "age": 26,
+      "class_id": "4"
+    }
+###update
+PATCH http://localhost:4004/odata/v4/CatalogService/student/400
+Content-Type: application/json
+ 
+{
+      
+      "age": 50
+    }
+ 

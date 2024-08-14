@@ -1,0 +1,14 @@
+<mvc:View controllerName="hema.order.manageorders.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+<List id="idList" items="{SalesOrder}">
+<items>
+<ObjectListItem title="{SalesOrder}" intro="{SalesORganization}" number="SalesORderType}" numberUnit="{SoldToParty}" icon="sap-icon://product">
+</ObjectListItem>
+</items>
+</List>
+        </content>
+    </Page>
+</mvc:View>
